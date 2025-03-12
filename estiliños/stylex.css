@@ -1,18 +1,15 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Estilos generales */
   body {
     background-color: rebeccapurple;
     font-family: Arial, sans-serif;
     height: 2000px;
   }
   
-  /* Cabecera */
   header {
     display: flex;
     align-items: center;
@@ -20,22 +17,20 @@
     padding: 1rem 2rem;
     background-color: aqua;
   }
-  
-  /* Logo */
+
   .logo img {
     width: 5%;
     background-color: aliceblue;
   }
   
-  /* Menú de navegación */
+
   nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
     align-items: center;
   }
-  
-  nav ul li a {
+  nav ul .li1 a {
     display: block;
     background-color: white;
     padding: 0.5rem 1rem;
@@ -43,8 +38,7 @@
     color: #000;
   }
   
-  /* Sección principal (hero) */
-  .hero {
+  .principal {
     display: flex;
     background-color: white;
     width: 95%;
@@ -52,23 +46,22 @@
     margin: 2rem auto;
   }
   
-  .hero .media {
+  .principal .media {
     width: 50%;
   }
   
-  .hero .media img {
+  .principal .media img {
     width: 100%;
     background-color: red;
     object-fit: cover;
   }
   
-  .hero .text {
+  .principal .text {
     width: 50%;
     display: flex;
     flex-direction: column;
   }
   
-  /* Bloques de texto en la sección hero */
   #section4,
   #section5 {
     display: flex;
@@ -85,10 +78,9 @@
     background-color: forestgreen;
   }
   
-  /* Sección de servicios */
   .services {
     width: 95%;
-    margin: 2rem auto;
+    margin: auto;
     text-align: center;
   }
   
@@ -107,10 +99,10 @@
     justify-content: center;
   }
   
-  /* Sección de historias de éxito */
   .success-stories {
     width: 95%;
-    margin: 2rem auto;
+    margin: auto;
+    margin-top: 2rem;
     text-align: center;
   }
   
@@ -129,7 +121,6 @@
     justify-content: center;
   }
   
-  /* Sección del blog */
   .blog {
     width: 95%;
     margin: 2rem auto;
@@ -142,7 +133,6 @@
     height: 200px;
   }
   
-  /* Pie de página */
   footer {
     background-color: chartreuse;
     margin-top: 2rem;
@@ -155,52 +145,59 @@
   
 .section1{
   display: grid;
-  background-color: white;
   grid-template-columns: 10% 80% 10%;
   grid-template-areas: 
   "he1 he1 ."
   "n1 n1 n1"
-  "a1 . ."
-  ". art1 ."
-  ". . a2"
+  "a1 art1 a2"
   "n2 n2 n2"
   ;
 }
-.header1{
-  background-color: darkgray;
-  grid-area: he1;
-  margin-bottom: 10px;
-}
 .nav1{
-  background-color: blueviolet;
+  background-color: gold;
+  align-items: center;
   grid-area: n1;
-  text-align: center;
+  margin-bottom: 10px;
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .article1{
   background-color: chartreuse;
   grid-area: art1;
+  margin-top: 10px;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .aside1{
   background-color: chocolate;
   grid-area: a1;
   margin-top: 10px;
   height: 300px;
-}
-.nav2{
-  background-color: blueviolet;
-  grid-area: n2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .aside2{
   background-color: chocolate;
   grid-area: a2;
+  margin-top: 10px;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav2{
-  background-color: blueviolet;
+  background-color: gold;
+  grid-area: n2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: n2;
   text-align: center;
   height: 60px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
