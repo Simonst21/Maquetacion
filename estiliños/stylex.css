@@ -31,7 +31,6 @@
     align-items: center;
   }
   nav ul .li1 a {
-    display: block;
     background-color: white;
     padding: 0.5rem 1rem;
     text-decoration: none;
